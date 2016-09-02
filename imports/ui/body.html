@@ -1,0 +1,21 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Event List</h1>
+
+      <form class="new-event">
+        <input type="text" name="text" placeholder="Type to add new event" />
+      </form>
+    </header>
+ 
+    <ul>
+      {{#each events}}
+        {{> event}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+ 
+<template name="event">
+  <li>{{text}}</li>
+</template>
