@@ -2,109 +2,931 @@
 1 verbose cli [ '/usr/local/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'blaze-html-templates',
+1 verbose cli   'meteor',
 1 verbose cli   '--save' ]
-2 info using npm@3.10.7
-3 info using node@v6.3.1
+2 info using npm@3.9.5
+3 info using node@v6.2.2
 4 silly loadCurrentTree Starting
 5 silly install loadCurrentTree
 6 silly install readLocalPackageData
-7 silly fetchPackageMetaData blaze-html-templates
-8 silly fetchNamedPackageData blaze-html-templates
-9 silly mapToRegistry name blaze-html-templates
+7 silly fetchPackageMetaData meteor
+8 silly fetchNamedPackageData meteor
+9 silly mapToRegistry name meteor
 10 silly mapToRegistry using default registry
 11 silly mapToRegistry registry https://registry.npmjs.org/
 12 silly mapToRegistry data Result {
-12 silly mapToRegistry   raw: 'blaze-html-templates',
+12 silly mapToRegistry   raw: 'meteor',
 12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   escapedName: 'blaze-html-templates',
-12 silly mapToRegistry   name: 'blaze-html-templates',
+12 silly mapToRegistry   name: 'meteor',
 12 silly mapToRegistry   rawSpec: '',
 12 silly mapToRegistry   spec: 'latest',
 12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npmjs.org/blaze-html-templates
-14 verbose request uri https://registry.npmjs.org/blaze-html-templates
+13 silly mapToRegistry uri https://registry.npmjs.org/meteor
+14 verbose request uri https://registry.npmjs.org/meteor
 15 verbose request no auth needed
-16 info attempt registry request try #1 at 7:09:21 PM
-17 verbose request id 3ab0bfcc28d524be
-18 http request GET https://registry.npmjs.org/blaze-html-templates
-19 http 404 https://registry.npmjs.org/blaze-html-templates
-20 verbose headers { 'content-type': 'application/json',
-20 verbose headers   'cache-control': 'max-age=0',
-20 verbose headers   'content-length': '2',
-20 verbose headers   'accept-ranges': 'bytes',
-20 verbose headers   date: 'Thu, 01 Sep 2016 12:09:22 GMT',
-20 verbose headers   via: '1.1 varnish',
-20 verbose headers   age: '0',
-20 verbose headers   connection: 'keep-alive',
-20 verbose headers   'x-served-by': 'cache-sin6921-SIN',
-20 verbose headers   'x-cache': 'MISS',
-20 verbose headers   'x-cache-hits': '0',
-20 verbose headers   'x-timer': 'S1472731762.192975,VS0,VE255',
-20 verbose headers   vary: 'Accept-Encoding' }
-21 silly get cb [ 404,
-21 silly get   { 'content-type': 'application/json',
-21 silly get     'cache-control': 'max-age=0',
-21 silly get     'content-length': '2',
-21 silly get     'accept-ranges': 'bytes',
-21 silly get     date: 'Thu, 01 Sep 2016 12:09:22 GMT',
-21 silly get     via: '1.1 varnish',
-21 silly get     age: '0',
-21 silly get     connection: 'keep-alive',
-21 silly get     'x-served-by': 'cache-sin6921-SIN',
-21 silly get     'x-cache': 'MISS',
-21 silly get     'x-cache-hits': '0',
-21 silly get     'x-timer': 'S1472731762.192975,VS0,VE255',
-21 silly get     vary: 'Accept-Encoding' } ]
-22 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/blaze-html-templates
-22 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-22 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
-22 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-22 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
-22 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-22 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
-22 silly fetchPackageMetaData     at emitOne (events.js:96:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-22 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
-22 silly fetchPackageMetaData  error for blaze-html-templates { Error: Registry returned 404 for GET on https://registry.npmjs.org/blaze-html-templates
-22 silly fetchPackageMetaData     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-22 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
-22 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-22 silly fetchPackageMetaData     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
-22 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
-22 silly fetchPackageMetaData     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
-22 silly fetchPackageMetaData     at emitOne (events.js:96:13)
-22 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
-22 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12) pkgid: 'blaze-html-templates', statusCode: 404, code: 'E404' }
-23 silly rollbackFailedOptional Starting
-24 silly rollbackFailedOptional Finishing
-25 silly runTopLevelLifecycles Finishing
-26 silly install printInstalled
-27 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/blaze-html-templates
-27 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
-27 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
-27 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
-27 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
-27 verbose stack     at emitTwo (events.js:106:13)
-27 verbose stack     at Request.emit (events.js:191:7)
-27 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
-27 verbose stack     at emitOne (events.js:96:13)
-27 verbose stack     at Request.emit (events.js:188:7)
-27 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
-28 verbose statusCode 404
-29 verbose pkgid blaze-html-templates
-30 verbose cwd /private/var/root/eventerra
-31 error Darwin 15.6.0
-32 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "blaze-html-templates" "--save"
-33 error node v6.3.1
-34 error npm  v3.10.7
-35 error code E404
-36 error 404 Registry returned 404 for GET on https://registry.npmjs.org/blaze-html-templates
-37 error 404
-38 error 404 'blaze-html-templates' is not in the npm registry.
-39 error 404 You should bug the author to publish it (or use the name yourself!)
-40 error 404 Note that you can also install from a
-41 error 404 tarball, folder, http url, or git url.
-42 verbose exit [ 1, true ]
+16 info attempt registry request try #1 at 12:08:06 AM
+17 verbose request id fbc908995c5e144e
+18 verbose etag "A802ZX4QYEQEV7PROWOQ0IX1B"
+19 http request GET https://registry.npmjs.org/meteor
+20 http 304 https://registry.npmjs.org/meteor
+21 verbose headers { date: 'Fri, 02 Sep 2016 17:08:08 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: '"A802ZX4QYEQEV7PROWOQ0IX1B"',
+21 verbose headers   age: '0',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-ams4432-AMS',
+21 verbose headers   'x-cache': 'MISS',
+21 verbose headers   'x-cache-hits': '0',
+21 verbose headers   'x-timer': 'S1472836088.227157,VS0,VE106',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Fri, 02 Sep 2016 17:08:08 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: '"A802ZX4QYEQEV7PROWOQ0IX1B"',
+22 silly get     age: '0',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-ams4432-AMS',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1472836088.227157,VS0,VE106',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose etag https://registry.npmjs.org/meteor from cache
+24 verbose get saving meteor to /Users/kevinsofyan/.npm/registry.npmjs.org/meteor/.cache.json
+25 verbose correctMkdir /Users/kevinsofyan/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule meteor@0.5.2-1 checking installable status
+39 silly cache add args [ 'meteor', null ]
+40 verbose cache add spec meteor
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'meteor',
+41 silly cache add   scope: null,
+41 silly cache add   name: 'meteor',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed meteor@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for meteor
+44 info addNameTag [ 'meteor', 'latest' ]
+45 silly mapToRegistry name meteor
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'meteor',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   name: 'meteor',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/meteor
+50 verbose addNameTag registry:https://registry.npmjs.org/meteor not in flight; fetching
+51 verbose get https://registry.npmjs.org/meteor not expired, no request
+52 silly addNameTag next cb for meteor with tag latest
+53 silly addNamed meteor@0.5.2-1
+54 verbose addNamed "0.5.2-1" is a plain semver version for meteor
+55 silly cache afterAdd meteor@0.5.2-1
+56 verbose afterAdd /Users/kevinsofyan/.npm/meteor/0.5.2-1/package/package.json not in flight; writing
+57 verbose correctMkdir /Users/kevinsofyan/.npm correctMkdir not in flight; initializing
+58 verbose afterAdd /Users/kevinsofyan/.npm/meteor/0.5.2-1/package/package.json written
+59 silly fetchNamedPackageData fibers
+60 silly mapToRegistry name fibers
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry data Result {
+63 silly mapToRegistry   raw: 'fibers',
+63 silly mapToRegistry   scope: null,
+63 silly mapToRegistry   name: 'fibers',
+63 silly mapToRegistry   rawSpec: '',
+63 silly mapToRegistry   spec: 'latest',
+63 silly mapToRegistry   type: 'tag' }
+64 silly mapToRegistry uri https://registry.npmjs.org/fibers
+65 verbose request uri https://registry.npmjs.org/fibers
+66 verbose request no auth needed
+67 info attempt registry request try #1 at 12:08:08 AM
+68 verbose etag "9YVQVNR5ZOBZ3YIZ8EJJPRVUJ"
+69 http request GET https://registry.npmjs.org/fibers
+70 http 304 https://registry.npmjs.org/fibers
+71 verbose headers { date: 'Fri, 02 Sep 2016 17:08:09 GMT',
+71 verbose headers   via: '1.1 varnish',
+71 verbose headers   'cache-control': 'max-age=300',
+71 verbose headers   etag: '"9YVQVNR5ZOBZ3YIZ8EJJPRVUJ"',
+71 verbose headers   age: '0',
+71 verbose headers   connection: 'keep-alive',
+71 verbose headers   'x-served-by': 'cache-ams4432-AMS',
+71 verbose headers   'x-cache': 'MISS',
+71 verbose headers   'x-cache-hits': '0',
+71 verbose headers   'x-timer': 'S1472836089.018887,VS0,VE743',
+71 verbose headers   vary: 'Accept-Encoding' }
+72 silly get cb [ 304,
+72 silly get   { date: 'Fri, 02 Sep 2016 17:08:09 GMT',
+72 silly get     via: '1.1 varnish',
+72 silly get     'cache-control': 'max-age=300',
+72 silly get     etag: '"9YVQVNR5ZOBZ3YIZ8EJJPRVUJ"',
+72 silly get     age: '0',
+72 silly get     connection: 'keep-alive',
+72 silly get     'x-served-by': 'cache-ams4432-AMS',
+72 silly get     'x-cache': 'MISS',
+72 silly get     'x-cache-hits': '0',
+72 silly get     'x-timer': 'S1472836089.018887,VS0,VE743',
+72 silly get     vary: 'Accept-Encoding' } ]
+73 verbose etag https://registry.npmjs.org/fibers from cache
+74 verbose get saving fibers to /Users/kevinsofyan/.npm/registry.npmjs.org/fibers/.cache.json
+75 verbose correctMkdir /Users/kevinsofyan/.npm correctMkdir not in flight; initializing
+76 silly resolveWithNewModule fibers@0.6.9 checking installable status
+77 silly cache add args [ 'fibers@0.6.9', null ]
+78 verbose cache add spec fibers@0.6.9
+79 silly cache add parsed spec Result {
+79 silly cache add   raw: 'fibers@0.6.9',
+79 silly cache add   scope: null,
+79 silly cache add   name: 'fibers',
+79 silly cache add   rawSpec: '0.6.9',
+79 silly cache add   spec: '0.6.9',
+79 silly cache add   type: 'version' }
+80 silly addNamed fibers@0.6.9
+81 verbose addNamed "0.6.9" is a plain semver version for fibers
+82 silly mapToRegistry name fibers
+83 silly mapToRegistry using default registry
+84 silly mapToRegistry registry https://registry.npmjs.org/
+85 silly mapToRegistry data Result {
+85 silly mapToRegistry   raw: 'fibers',
+85 silly mapToRegistry   scope: null,
+85 silly mapToRegistry   name: 'fibers',
+85 silly mapToRegistry   rawSpec: '',
+85 silly mapToRegistry   spec: 'latest',
+85 silly mapToRegistry   type: 'tag' }
+86 silly mapToRegistry uri https://registry.npmjs.org/fibers
+87 verbose addNameVersion registry:https://registry.npmjs.org/fibers not in flight; fetching
+88 verbose get https://registry.npmjs.org/fibers not expired, no request
+89 silly cache afterAdd fibers@0.6.9
+90 verbose afterAdd /Users/kevinsofyan/.npm/fibers/0.6.9/package/package.json not in flight; writing
+91 verbose correctMkdir /Users/kevinsofyan/.npm correctMkdir not in flight; initializing
+92 verbose afterAdd /Users/kevinsofyan/.npm/fibers/0.6.9/package/package.json written
+93 silly loadAllDepsIntoIdealTree Finishing
+94 silly idealTree:prePrune eventerra@
+94 silly idealTree:prePrune +-- bson@0.1.5
+94 silly idealTree:prePrune +-- clean-css@0.8.2
+94 silly idealTree:prePrune +-- coffee-script@1.4.0
+94 silly idealTree:prePrune +-- colors@0.6.2
+94 silly idealTree:prePrune +-- connect@1.9.2
+94 silly idealTree:prePrune +-- cssom@0.2.5
+94 silly idealTree:prePrune +-- debug@2.2.0
+94 silly idealTree:prePrune +-- faye-websocket@0.4.0
+94 silly idealTree:prePrune +-- fibers@0.6.9
+94 silly idealTree:prePrune +-- formidable@1.0.17
+94 silly idealTree:prePrune +-- gzippo@0.1.7
+94 silly idealTree:prePrune +-- handlebars@1.0.7
+94 silly idealTree:prePrune | `-- uglify-js@1.2.6
+94 silly idealTree:prePrune +-- http-proxy@0.8.5
+94 silly idealTree:prePrune +-- keypress@0.1.0
+94 silly idealTree:prePrune +-- less@1.3.1
+94 silly idealTree:prePrune +-- mailcomposer@0.1.15
+94 silly idealTree:prePrune +-- meteor-node-stubs@0.2.3
+94 silly idealTree:prePrune | +-- assert@1.3.0
+94 silly idealTree:prePrune | +-- browserify-zlib@0.1.4
+94 silly idealTree:prePrune | | `-- pako@0.2.8
+94 silly idealTree:prePrune | +-- buffer@4.5.1
+94 silly idealTree:prePrune | | +-- base64-js@1.1.2
+94 silly idealTree:prePrune | | +-- ieee754@1.1.6
+94 silly idealTree:prePrune | | `-- isarray@1.0.0
+94 silly idealTree:prePrune | +-- console-browserify@1.1.0
+94 silly idealTree:prePrune | | `-- date-now@0.1.4
+94 silly idealTree:prePrune | +-- constants-browserify@1.0.0
+94 silly idealTree:prePrune | +-- crypto-browserify@3.11.0
+94 silly idealTree:prePrune | | +-- browserify-cipher@1.0.0
+94 silly idealTree:prePrune | | | +-- browserify-aes@1.0.6
+94 silly idealTree:prePrune | | | | +-- buffer-xor@1.0.3
+94 silly idealTree:prePrune | | | | `-- cipher-base@1.0.2
+94 silly idealTree:prePrune | | | +-- browserify-des@1.0.0
+94 silly idealTree:prePrune | | | | +-- cipher-base@1.0.2
+94 silly idealTree:prePrune | | | | `-- des.js@1.0.0
+94 silly idealTree:prePrune | | | |   `-- minimalistic-assert@1.0.0
+94 silly idealTree:prePrune | | | `-- evp_bytestokey@1.0.0
+94 silly idealTree:prePrune | | +-- browserify-sign@4.0.0
+94 silly idealTree:prePrune | | | +-- bn.js@4.11.1
+94 silly idealTree:prePrune | | | +-- browserify-rsa@4.0.1
+94 silly idealTree:prePrune | | | +-- elliptic@6.2.3
+94 silly idealTree:prePrune | | | | +-- brorand@1.0.5
+94 silly idealTree:prePrune | | | | `-- hash.js@1.0.3
+94 silly idealTree:prePrune | | | `-- parse-asn1@5.0.0
+94 silly idealTree:prePrune | | |   +-- asn1.js@4.5.2
+94 silly idealTree:prePrune | | |   | `-- minimalistic-assert@1.0.0
+94 silly idealTree:prePrune | | |   +-- browserify-aes@1.0.6
+94 silly idealTree:prePrune | | |   | +-- buffer-xor@1.0.3
+94 silly idealTree:prePrune | | |   | `-- cipher-base@1.0.2
+94 silly idealTree:prePrune | | |   `-- evp_bytestokey@1.0.0
+94 silly idealTree:prePrune | | +-- create-ecdh@4.0.0
+94 silly idealTree:prePrune | | | +-- bn.js@4.11.1
+94 silly idealTree:prePrune | | | `-- elliptic@6.2.3
+94 silly idealTree:prePrune | | |   +-- brorand@1.0.5
+94 silly idealTree:prePrune | | |   `-- hash.js@1.0.3
+94 silly idealTree:prePrune | | +-- create-hash@1.1.2
+94 silly idealTree:prePrune | | | +-- cipher-base@1.0.2
+94 silly idealTree:prePrune | | | +-- ripemd160@1.0.1
+94 silly idealTree:prePrune | | | `-- sha.js@2.4.5
+94 silly idealTree:prePrune | | +-- create-hmac@1.1.4
+94 silly idealTree:prePrune | | +-- diffie-hellman@5.0.2
+94 silly idealTree:prePrune | | | +-- bn.js@4.11.1
+94 silly idealTree:prePrune | | | `-- miller-rabin@4.0.0
+94 silly idealTree:prePrune | | |   `-- brorand@1.0.5
+94 silly idealTree:prePrune | | +-- inherits@2.0.1
+94 silly idealTree:prePrune | | +-- pbkdf2@3.0.4
+94 silly idealTree:prePrune | | +-- public-encrypt@4.0.0
+94 silly idealTree:prePrune | | | +-- bn.js@4.11.1
+94 silly idealTree:prePrune | | | +-- browserify-rsa@4.0.1
+94 silly idealTree:prePrune | | | `-- parse-asn1@5.0.0
+94 silly idealTree:prePrune | | |   +-- asn1.js@4.5.2
+94 silly idealTree:prePrune | | |   | `-- minimalistic-assert@1.0.0
+94 silly idealTree:prePrune | | |   +-- browserify-aes@1.0.6
+94 silly idealTree:prePrune | | |   | +-- buffer-xor@1.0.3
+94 silly idealTree:prePrune | | |   | `-- cipher-base@1.0.2
+94 silly idealTree:prePrune | | |   `-- evp_bytestokey@1.0.0
+94 silly idealTree:prePrune | | `-- randombytes@2.0.3
+94 silly idealTree:prePrune | +-- domain-browser@1.1.7
+94 silly idealTree:prePrune | +-- events@1.1.0
+94 silly idealTree:prePrune | +-- http-browserify@1.7.0
+94 silly idealTree:prePrune | | +-- Base64@0.2.1
+94 silly idealTree:prePrune | | `-- inherits@2.0.1
+94 silly idealTree:prePrune | +-- https-browserify@0.0.1
+94 silly idealTree:prePrune | +-- os-browserify@0.2.1
+94 silly idealTree:prePrune | +-- path-browserify@0.0.0
+94 silly idealTree:prePrune | +-- process@0.11.2
+94 silly idealTree:prePrune | +-- punycode@1.4.1
+94 silly idealTree:prePrune | +-- querystring-es3@0.2.1
+94 silly idealTree:prePrune | +-- readable-stream@2.0.6
+94 silly idealTree:prePrune | | +-- core-util-is@1.0.2
+94 silly idealTree:prePrune | | +-- inherits@2.0.1
+94 silly idealTree:prePrune | | +-- isarray@1.0.0
+94 silly idealTree:prePrune | | +-- process-nextick-args@1.0.6
+94 silly idealTree:prePrune | | `-- util-deprecate@1.0.2
+94 silly idealTree:prePrune | +-- stream-browserify@2.0.1
+94 silly idealTree:prePrune | | `-- inherits@2.0.1
+94 silly idealTree:prePrune | +-- string_decoder@0.10.31
+94 silly idealTree:prePrune | +-- timers-browserify@1.4.2
+94 silly idealTree:prePrune | +-- tty-browserify@0.0.0
+94 silly idealTree:prePrune | +-- url@0.11.0
+94 silly idealTree:prePrune | | +-- punycode@1.3.2
+94 silly idealTree:prePrune | | `-- querystring@0.2.0
+94 silly idealTree:prePrune | +-- util@0.10.3
+94 silly idealTree:prePrune | | `-- inherits@2.0.1
+94 silly idealTree:prePrune | `-- vm-browserify@0.0.4
+94 silly idealTree:prePrune |   `-- indexof@0.0.1
+94 silly idealTree:prePrune +-- meteor@0.5.2-1
+94 silly idealTree:prePrune +-- mime@1.2.7
+94 silly idealTree:prePrune +-- mimelib-noiconv@0.1.9
+94 silly idealTree:prePrune +-- mkdirp@0.3.5
+94 silly idealTree:prePrune +-- mongodb@1.1.11
+94 silly idealTree:prePrune +-- ms@0.7.1
+94 silly idealTree:prePrune +-- nib@0.8.2
+94 silly idealTree:prePrune +-- node-uuid@1.3.3
+94 silly idealTree:prePrune +-- optimist@0.3.5
+94 silly idealTree:prePrune +-- pkginfo@0.2.3
+94 silly idealTree:prePrune +-- progress@0.0.5
+94 silly idealTree:prePrune +-- qs@6.2.1
+94 silly idealTree:prePrune +-- rai@0.1.12
+94 silly idealTree:prePrune +-- request@2.12.0
+94 silly idealTree:prePrune | +-- form-data@0.0.3
+94 silly idealTree:prePrune | | +-- async@0.1.9
+94 silly idealTree:prePrune | | `-- combined-stream@0.0.3
+94 silly idealTree:prePrune | |   `-- delayed-stream@0.0.5
+94 silly idealTree:prePrune | `-- mime@1.2.7
+94 silly idealTree:prePrune +-- semver@1.1.0
+94 silly idealTree:prePrune +-- simplesmtp@0.1.25
+94 silly idealTree:prePrune +-- sockjs@0.3.4
+94 silly idealTree:prePrune +-- stream-buffers@0.2.3
+94 silly idealTree:prePrune +-- stylus@0.30.1
+94 silly idealTree:prePrune +-- uglify-js@1.3.4
+94 silly idealTree:prePrune +-- useragent@1.1.0
+94 silly idealTree:prePrune | +-- request@2.9.202
+94 silly idealTree:prePrune | `-- semver@1.0.14
+94 silly idealTree:prePrune +-- wordwrap@0.0.3
+94 silly idealTree:prePrune +-- xoauth2@1.2.0
+94 silly idealTree:prePrune `-- yamlparser@0.0.2
+95 silly loadIdealTree Finishing
+96 silly currentTree eventerra@
+96 silly currentTree +-- bson@0.1.5
+96 silly currentTree +-- clean-css@0.8.2
+96 silly currentTree +-- coffee-script@1.4.0
+96 silly currentTree +-- colors@0.6.2
+96 silly currentTree +-- connect@1.9.2
+96 silly currentTree +-- cssom@0.2.5
+96 silly currentTree +-- debug@2.2.0
+96 silly currentTree +-- faye-websocket@0.4.0
+96 silly currentTree +-- formidable@1.0.17
+96 silly currentTree +-- gzippo@0.1.7
+96 silly currentTree +-- handlebars@1.0.7
+96 silly currentTree | `-- uglify-js@1.2.6
+96 silly currentTree +-- http-proxy@0.8.5
+96 silly currentTree +-- keypress@0.1.0
+96 silly currentTree +-- less@1.3.1
+96 silly currentTree +-- mailcomposer@0.1.15
+96 silly currentTree +-- meteor-node-stubs@0.2.3
+96 silly currentTree | +-- assert@1.3.0
+96 silly currentTree | +-- browserify-zlib@0.1.4
+96 silly currentTree | | `-- pako@0.2.8
+96 silly currentTree | +-- buffer@4.5.1
+96 silly currentTree | | +-- base64-js@1.1.2
+96 silly currentTree | | +-- ieee754@1.1.6
+96 silly currentTree | | `-- isarray@1.0.0
+96 silly currentTree | +-- console-browserify@1.1.0
+96 silly currentTree | | `-- date-now@0.1.4
+96 silly currentTree | +-- constants-browserify@1.0.0
+96 silly currentTree | +-- crypto-browserify@3.11.0
+96 silly currentTree | | +-- browserify-cipher@1.0.0
+96 silly currentTree | | | +-- browserify-aes@1.0.6
+96 silly currentTree | | | | +-- buffer-xor@1.0.3
+96 silly currentTree | | | | `-- cipher-base@1.0.2
+96 silly currentTree | | | +-- browserify-des@1.0.0
+96 silly currentTree | | | | +-- cipher-base@1.0.2
+96 silly currentTree | | | | `-- des.js@1.0.0
+96 silly currentTree | | | |   `-- minimalistic-assert@1.0.0
+96 silly currentTree | | | `-- evp_bytestokey@1.0.0
+96 silly currentTree | | +-- browserify-sign@4.0.0
+96 silly currentTree | | | +-- bn.js@4.11.1
+96 silly currentTree | | | +-- browserify-rsa@4.0.1
+96 silly currentTree | | | +-- elliptic@6.2.3
+96 silly currentTree | | | | +-- brorand@1.0.5
+96 silly currentTree | | | | `-- hash.js@1.0.3
+96 silly currentTree | | | `-- parse-asn1@5.0.0
+96 silly currentTree | | |   +-- asn1.js@4.5.2
+96 silly currentTree | | |   | `-- minimalistic-assert@1.0.0
+96 silly currentTree | | |   +-- browserify-aes@1.0.6
+96 silly currentTree | | |   | +-- buffer-xor@1.0.3
+96 silly currentTree | | |   | `-- cipher-base@1.0.2
+96 silly currentTree | | |   `-- evp_bytestokey@1.0.0
+96 silly currentTree | | +-- create-ecdh@4.0.0
+96 silly currentTree | | | +-- bn.js@4.11.1
+96 silly currentTree | | | `-- elliptic@6.2.3
+96 silly currentTree | | |   +-- brorand@1.0.5
+96 silly currentTree | | |   `-- hash.js@1.0.3
+96 silly currentTree | | +-- create-hash@1.1.2
+96 silly currentTree | | | +-- cipher-base@1.0.2
+96 silly currentTree | | | +-- ripemd160@1.0.1
+96 silly currentTree | | | `-- sha.js@2.4.5
+96 silly currentTree | | +-- create-hmac@1.1.4
+96 silly currentTree | | +-- diffie-hellman@5.0.2
+96 silly currentTree | | | +-- bn.js@4.11.1
+96 silly currentTree | | | `-- miller-rabin@4.0.0
+96 silly currentTree | | |   `-- brorand@1.0.5
+96 silly currentTree | | +-- inherits@2.0.1
+96 silly currentTree | | +-- pbkdf2@3.0.4
+96 silly currentTree | | +-- public-encrypt@4.0.0
+96 silly currentTree | | | +-- bn.js@4.11.1
+96 silly currentTree | | | +-- browserify-rsa@4.0.1
+96 silly currentTree | | | `-- parse-asn1@5.0.0
+96 silly currentTree | | |   +-- asn1.js@4.5.2
+96 silly currentTree | | |   | `-- minimalistic-assert@1.0.0
+96 silly currentTree | | |   +-- browserify-aes@1.0.6
+96 silly currentTree | | |   | +-- buffer-xor@1.0.3
+96 silly currentTree | | |   | `-- cipher-base@1.0.2
+96 silly currentTree | | |   `-- evp_bytestokey@1.0.0
+96 silly currentTree | | `-- randombytes@2.0.3
+96 silly currentTree | +-- domain-browser@1.1.7
+96 silly currentTree | +-- events@1.1.0
+96 silly currentTree | +-- http-browserify@1.7.0
+96 silly currentTree | | +-- Base64@0.2.1
+96 silly currentTree | | `-- inherits@2.0.1
+96 silly currentTree | +-- https-browserify@0.0.1
+96 silly currentTree | +-- os-browserify@0.2.1
+96 silly currentTree | +-- path-browserify@0.0.0
+96 silly currentTree | +-- process@0.11.2
+96 silly currentTree | +-- punycode@1.4.1
+96 silly currentTree | +-- querystring-es3@0.2.1
+96 silly currentTree | +-- readable-stream@2.0.6
+96 silly currentTree | | +-- core-util-is@1.0.2
+96 silly currentTree | | +-- inherits@2.0.1
+96 silly currentTree | | +-- isarray@1.0.0
+96 silly currentTree | | +-- process-nextick-args@1.0.6
+96 silly currentTree | | `-- util-deprecate@1.0.2
+96 silly currentTree | +-- stream-browserify@2.0.1
+96 silly currentTree | | `-- inherits@2.0.1
+96 silly currentTree | +-- string_decoder@0.10.31
+96 silly currentTree | +-- timers-browserify@1.4.2
+96 silly currentTree | +-- tty-browserify@0.0.0
+96 silly currentTree | +-- url@0.11.0
+96 silly currentTree | | +-- punycode@1.3.2
+96 silly currentTree | | `-- querystring@0.2.0
+96 silly currentTree | +-- util@0.10.3
+96 silly currentTree | | `-- inherits@2.0.1
+96 silly currentTree | `-- vm-browserify@0.0.4
+96 silly currentTree |   `-- indexof@0.0.1
+96 silly currentTree +-- mime@1.2.7
+96 silly currentTree +-- mimelib-noiconv@0.1.9
+96 silly currentTree +-- mkdirp@0.3.5
+96 silly currentTree +-- mongodb@1.1.11
+96 silly currentTree +-- ms@0.7.1
+96 silly currentTree +-- nib@0.8.2
+96 silly currentTree +-- node-uuid@1.3.3
+96 silly currentTree +-- optimist@0.3.5
+96 silly currentTree +-- pkginfo@0.2.3
+96 silly currentTree +-- progress@0.0.5
+96 silly currentTree +-- qs@6.2.1
+96 silly currentTree +-- rai@0.1.12
+96 silly currentTree +-- request@2.12.0
+96 silly currentTree | +-- form-data@0.0.3
+96 silly currentTree | | +-- async@0.1.9
+96 silly currentTree | | `-- combined-stream@0.0.3
+96 silly currentTree | |   `-- delayed-stream@0.0.5
+96 silly currentTree | `-- mime@1.2.7
+96 silly currentTree +-- semver@1.1.0
+96 silly currentTree +-- simplesmtp@0.1.25
+96 silly currentTree +-- sockjs@0.3.4
+96 silly currentTree +-- stream-buffers@0.2.3
+96 silly currentTree +-- stylus@0.30.1
+96 silly currentTree +-- uglify-js@1.3.4
+96 silly currentTree +-- useragent@1.1.0
+96 silly currentTree | +-- request@2.9.202
+96 silly currentTree | `-- semver@1.0.14
+96 silly currentTree +-- wordwrap@0.0.3
+96 silly currentTree +-- xoauth2@1.2.0
+96 silly currentTree `-- yamlparser@0.0.2
+97 silly idealTree eventerra@
+97 silly idealTree +-- bson@0.1.5
+97 silly idealTree +-- clean-css@0.8.2
+97 silly idealTree +-- coffee-script@1.4.0
+97 silly idealTree +-- colors@0.6.2
+97 silly idealTree +-- connect@1.9.2
+97 silly idealTree +-- cssom@0.2.5
+97 silly idealTree +-- debug@2.2.0
+97 silly idealTree +-- faye-websocket@0.4.0
+97 silly idealTree +-- fibers@0.6.9
+97 silly idealTree +-- formidable@1.0.17
+97 silly idealTree +-- gzippo@0.1.7
+97 silly idealTree +-- handlebars@1.0.7
+97 silly idealTree | `-- uglify-js@1.2.6
+97 silly idealTree +-- http-proxy@0.8.5
+97 silly idealTree +-- keypress@0.1.0
+97 silly idealTree +-- less@1.3.1
+97 silly idealTree +-- mailcomposer@0.1.15
+97 silly idealTree +-- meteor-node-stubs@0.2.3
+97 silly idealTree | +-- assert@1.3.0
+97 silly idealTree | +-- browserify-zlib@0.1.4
+97 silly idealTree | | `-- pako@0.2.8
+97 silly idealTree | +-- buffer@4.5.1
+97 silly idealTree | | +-- base64-js@1.1.2
+97 silly idealTree | | +-- ieee754@1.1.6
+97 silly idealTree | | `-- isarray@1.0.0
+97 silly idealTree | +-- console-browserify@1.1.0
+97 silly idealTree | | `-- date-now@0.1.4
+97 silly idealTree | +-- constants-browserify@1.0.0
+97 silly idealTree | +-- crypto-browserify@3.11.0
+97 silly idealTree | | +-- browserify-cipher@1.0.0
+97 silly idealTree | | | +-- browserify-aes@1.0.6
+97 silly idealTree | | | | +-- buffer-xor@1.0.3
+97 silly idealTree | | | | `-- cipher-base@1.0.2
+97 silly idealTree | | | +-- browserify-des@1.0.0
+97 silly idealTree | | | | +-- cipher-base@1.0.2
+97 silly idealTree | | | | `-- des.js@1.0.0
+97 silly idealTree | | | |   `-- minimalistic-assert@1.0.0
+97 silly idealTree | | | `-- evp_bytestokey@1.0.0
+97 silly idealTree | | +-- browserify-sign@4.0.0
+97 silly idealTree | | | +-- bn.js@4.11.1
+97 silly idealTree | | | +-- browserify-rsa@4.0.1
+97 silly idealTree | | | +-- elliptic@6.2.3
+97 silly idealTree | | | | +-- brorand@1.0.5
+97 silly idealTree | | | | `-- hash.js@1.0.3
+97 silly idealTree | | | `-- parse-asn1@5.0.0
+97 silly idealTree | | |   +-- asn1.js@4.5.2
+97 silly idealTree | | |   | `-- minimalistic-assert@1.0.0
+97 silly idealTree | | |   +-- browserify-aes@1.0.6
+97 silly idealTree | | |   | +-- buffer-xor@1.0.3
+97 silly idealTree | | |   | `-- cipher-base@1.0.2
+97 silly idealTree | | |   `-- evp_bytestokey@1.0.0
+97 silly idealTree | | +-- create-ecdh@4.0.0
+97 silly idealTree | | | +-- bn.js@4.11.1
+97 silly idealTree | | | `-- elliptic@6.2.3
+97 silly idealTree | | |   +-- brorand@1.0.5
+97 silly idealTree | | |   `-- hash.js@1.0.3
+97 silly idealTree | | +-- create-hash@1.1.2
+97 silly idealTree | | | +-- cipher-base@1.0.2
+97 silly idealTree | | | +-- ripemd160@1.0.1
+97 silly idealTree | | | `-- sha.js@2.4.5
+97 silly idealTree | | +-- create-hmac@1.1.4
+97 silly idealTree | | +-- diffie-hellman@5.0.2
+97 silly idealTree | | | +-- bn.js@4.11.1
+97 silly idealTree | | | `-- miller-rabin@4.0.0
+97 silly idealTree | | |   `-- brorand@1.0.5
+97 silly idealTree | | +-- inherits@2.0.1
+97 silly idealTree | | +-- pbkdf2@3.0.4
+97 silly idealTree | | +-- public-encrypt@4.0.0
+97 silly idealTree | | | +-- bn.js@4.11.1
+97 silly idealTree | | | +-- browserify-rsa@4.0.1
+97 silly idealTree | | | `-- parse-asn1@5.0.0
+97 silly idealTree | | |   +-- asn1.js@4.5.2
+97 silly idealTree | | |   | `-- minimalistic-assert@1.0.0
+97 silly idealTree | | |   +-- browserify-aes@1.0.6
+97 silly idealTree | | |   | +-- buffer-xor@1.0.3
+97 silly idealTree | | |   | `-- cipher-base@1.0.2
+97 silly idealTree | | |   `-- evp_bytestokey@1.0.0
+97 silly idealTree | | `-- randombytes@2.0.3
+97 silly idealTree | +-- domain-browser@1.1.7
+97 silly idealTree | +-- events@1.1.0
+97 silly idealTree | +-- http-browserify@1.7.0
+97 silly idealTree | | +-- Base64@0.2.1
+97 silly idealTree | | `-- inherits@2.0.1
+97 silly idealTree | +-- https-browserify@0.0.1
+97 silly idealTree | +-- os-browserify@0.2.1
+97 silly idealTree | +-- path-browserify@0.0.0
+97 silly idealTree | +-- process@0.11.2
+97 silly idealTree | +-- punycode@1.4.1
+97 silly idealTree | +-- querystring-es3@0.2.1
+97 silly idealTree | +-- readable-stream@2.0.6
+97 silly idealTree | | +-- core-util-is@1.0.2
+97 silly idealTree | | +-- inherits@2.0.1
+97 silly idealTree | | +-- isarray@1.0.0
+97 silly idealTree | | +-- process-nextick-args@1.0.6
+97 silly idealTree | | `-- util-deprecate@1.0.2
+97 silly idealTree | +-- stream-browserify@2.0.1
+97 silly idealTree | | `-- inherits@2.0.1
+97 silly idealTree | +-- string_decoder@0.10.31
+97 silly idealTree | +-- timers-browserify@1.4.2
+97 silly idealTree | +-- tty-browserify@0.0.0
+97 silly idealTree | +-- url@0.11.0
+97 silly idealTree | | +-- punycode@1.3.2
+97 silly idealTree | | `-- querystring@0.2.0
+97 silly idealTree | +-- util@0.10.3
+97 silly idealTree | | `-- inherits@2.0.1
+97 silly idealTree | `-- vm-browserify@0.0.4
+97 silly idealTree |   `-- indexof@0.0.1
+97 silly idealTree +-- meteor@0.5.2-1
+97 silly idealTree +-- mime@1.2.7
+97 silly idealTree +-- mimelib-noiconv@0.1.9
+97 silly idealTree +-- mkdirp@0.3.5
+97 silly idealTree +-- mongodb@1.1.11
+97 silly idealTree +-- ms@0.7.1
+97 silly idealTree +-- nib@0.8.2
+97 silly idealTree +-- node-uuid@1.3.3
+97 silly idealTree +-- optimist@0.3.5
+97 silly idealTree +-- pkginfo@0.2.3
+97 silly idealTree +-- progress@0.0.5
+97 silly idealTree +-- qs@6.2.1
+97 silly idealTree +-- rai@0.1.12
+97 silly idealTree +-- request@2.12.0
+97 silly idealTree | +-- form-data@0.0.3
+97 silly idealTree | | +-- async@0.1.9
+97 silly idealTree | | `-- combined-stream@0.0.3
+97 silly idealTree | |   `-- delayed-stream@0.0.5
+97 silly idealTree | `-- mime@1.2.7
+97 silly idealTree +-- semver@1.1.0
+97 silly idealTree +-- simplesmtp@0.1.25
+97 silly idealTree +-- sockjs@0.3.4
+97 silly idealTree +-- stream-buffers@0.2.3
+97 silly idealTree +-- stylus@0.30.1
+97 silly idealTree +-- uglify-js@1.3.4
+97 silly idealTree +-- useragent@1.1.0
+97 silly idealTree | +-- request@2.9.202
+97 silly idealTree | `-- semver@1.0.14
+97 silly idealTree +-- wordwrap@0.0.3
+97 silly idealTree +-- xoauth2@1.2.0
+97 silly idealTree `-- yamlparser@0.0.2
+98 silly generateActionsToTake Starting
+99 silly install generateActionsToTake
+100 silly generateActionsToTake Finishing
+101 silly diffTrees action count 2
+102 silly diffTrees add fibers@0.6.9
+103 silly diffTrees add meteor@0.5.2-1
+104 silly decomposeActions action count 16
+105 silly decomposeActions fetch fibers@0.6.9
+106 silly decomposeActions extract fibers@0.6.9
+107 silly decomposeActions test fibers@0.6.9
+108 silly decomposeActions preinstall fibers@0.6.9
+109 silly decomposeActions build fibers@0.6.9
+110 silly decomposeActions install fibers@0.6.9
+111 silly decomposeActions postinstall fibers@0.6.9
+112 silly decomposeActions finalize fibers@0.6.9
+113 silly decomposeActions fetch meteor@0.5.2-1
+114 silly decomposeActions extract meteor@0.5.2-1
+115 silly decomposeActions test meteor@0.5.2-1
+116 silly decomposeActions preinstall meteor@0.5.2-1
+117 silly decomposeActions build meteor@0.5.2-1
+118 silly decomposeActions install meteor@0.5.2-1
+119 silly decomposeActions postinstall meteor@0.5.2-1
+120 silly decomposeActions finalize meteor@0.5.2-1
+121 silly executeActions Starting
+122 silly install executeActions
+123 silly doSerial global-install 0
+124 silly doParallel fetch 2
+125 verbose correctMkdir /Users/kevinsofyan/.npm/_locks correctMkdir not in flight; initializing
+126 verbose lock using /Users/kevinsofyan/.npm/_locks/staging-5d13b1d1511a6450.lock for /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging
+127 silly doParallel extract 2
+128 silly extract fibers@0.6.9
+129 silly extract meteor@0.5.2-1
+130 verbose unbuild node_modules/.staging/fibers-54bbee2c
+131 verbose unbuild node_modules/.staging/meteor-133e17f9
+132 silly gentlyRm /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c is being purged from base /Users/kevinsofyan/Code/projeckt/eventerra
+133 verbose gentlyRm don't care about contents; nuking /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c
+134 verbose tar unpack /Users/kevinsofyan/.npm/fibers/0.6.9/package.tgz
+135 verbose tar unpacking to /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c
+136 silly gentlyRm /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c is being purged
+137 verbose gentlyRm don't care about contents; nuking /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c
+138 silly gentlyRm /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/meteor-133e17f9 is being purged from base /Users/kevinsofyan/Code/projeckt/eventerra
+139 verbose gentlyRm don't care about contents; nuking /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/meteor-133e17f9
+140 silly gunzTarPerm modes [ '755', '644' ]
+141 verbose tar unpack /Users/kevinsofyan/.npm/meteor/0.5.2-1/package.tgz
+142 verbose tar unpacking to /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/meteor-133e17f9
+143 silly gentlyRm /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/meteor-133e17f9 is being purged
+144 verbose gentlyRm don't care about contents; nuking /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/meteor-133e17f9
+145 silly gunzTarPerm modes [ '755', '644' ]
+146 silly gunzTarPerm extractEntry package.json
+147 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+148 silly gunzTarPerm extractEntry package.json
+149 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+150 silly gunzTarPerm extractEntry .npmignore
+151 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+152 silly gunzTarPerm extractEntry README.md
+153 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+154 silly gunzTarPerm extractEntry .npmignore
+155 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+156 silly gunzTarPerm extractEntry README.md
+157 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+158 silly gunzTarPerm extractEntry LICENSE
+159 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+160 silly gunzTarPerm extractEntry dev_bundle/.bundle_version.txt
+161 silly gunzTarPerm modified mode [ 'dev_bundle/.bundle_version.txt', 438, 420 ]
+162 silly gunzTarPerm extractEntry install.sh
+163 silly gunzTarPerm modified mode [ 'install.sh', 511, 493 ]
+164 silly gunzTarPerm extractEntry docs/public/favicon.ico
+165 silly gunzTarPerm modified mode [ 'docs/public/favicon.ico', 438, 420 ]
+166 silly gunzTarPerm extractEntry docs/public/robots.txt
+167 silly gunzTarPerm modified mode [ 'docs/public/robots.txt', 438, 420 ]
+168 silly gunzTarPerm extractEntry future.js
+169 silly gunzTarPerm modified mode [ 'future.js', 438, 420 ]
+170 silly gunzTarPerm extractEntry test.js
+171 silly gunzTarPerm modified mode [ 'test.js', 511, 493 ]
+172 silly gunzTarPerm extractEntry docs/client/api.js
+173 silly gunzTarPerm modified mode [ 'docs/client/api.js', 438, 420 ]
+174 silly gunzTarPerm extractEntry fibers.js
+175 silly gunzTarPerm modified mode [ 'fibers.js', 438, 420 ]
+176 silly gunzTarPerm extractEntry build.js
+177 silly gunzTarPerm modified mode [ 'build.js', 511, 493 ]
+178 silly gunzTarPerm extractEntry docs/client/docs.js
+179 silly gunzTarPerm modified mode [ 'docs/client/docs.js', 438, 420 ]
+180 silly gunzTarPerm extractEntry docs/client/concepts.html
+181 silly gunzTarPerm modified mode [ 'docs/client/concepts.html', 438, 420 ]
+182 silly gunzTarPerm extractEntry docs/client/commandline.html
+183 silly gunzTarPerm modified mode [ 'docs/client/commandline.html', 438, 420 ]
+184 silly gunzTarPerm extractEntry test/unwind.js
+185 silly gunzTarPerm modified mode [ 'test/unwind.js', 438, 420 ]
+186 silly gunzTarPerm extractEntry test/current.js
+187 silly gunzTarPerm modified mode [ 'test/current.js', 438, 420 ]
+188 silly gunzTarPerm extractEntry test/stack-overflow.js
+189 silly gunzTarPerm modified mode [ 'test/stack-overflow.js', 438, 420 ]
+190 silly gunzTarPerm extractEntry test/finish-multiple.js
+191 silly gunzTarPerm modified mode [ 'test/finish-multiple.js', 438, 420 ]
+192 silly gunzTarPerm extractEntry docs/client/packages.html
+193 silly gunzTarPerm modified mode [ 'docs/client/packages.html', 438, 420 ]
+194 silly gunzTarPerm extractEntry docs/client/api.html
+195 silly gunzTarPerm modified mode [ 'docs/client/api.html', 438, 420 ]
+196 silly gunzTarPerm extractEntry test/pool.js
+197 silly gunzTarPerm modified mode [ 'test/pool.js', 438, 420 ]
+198 silly gunzTarPerm extractEntry test/fibonacci.js
+199 silly gunzTarPerm modified mode [ 'test/fibonacci.js', 438, 420 ]
+200 silly gunzTarPerm extractEntry docs/client/splash.less
+201 silly gunzTarPerm modified mode [ 'docs/client/splash.less', 438, 420 ]
+202 silly gunzTarPerm extractEntry docs/client/docs.html
+203 silly gunzTarPerm modified mode [ 'docs/client/docs.html', 438, 420 ]
+204 silly gunzTarPerm extractEntry test/bad-context.js
+205 silly gunzTarPerm modified mode [ 'test/bad-context.js', 438, 420 ]
+206 silly gunzTarPerm extractEntry test/future.js
+207 silly gunzTarPerm modified mode [ 'test/future.js', 438, 420 ]
+208 silly gunzTarPerm extractEntry docs/client/ga.html
+209 silly gunzTarPerm modified mode [ 'docs/client/ga.html', 438, 420 ]
+210 silly gunzTarPerm extractEntry docs/client/docs.css
+211 silly gunzTarPerm modified mode [ 'docs/client/docs.css', 438, 420 ]
+212 silly gunzTarPerm extractEntry docs/client/introduction.html
+213 silly gunzTarPerm modified mode [ 'docs/client/introduction.html', 438, 420 ]
+214 silly gunzTarPerm extractEntry docs/.meteor/.npmignore
+215 silly gunzTarPerm modified mode [ 'docs/.meteor/.npmignore', 438, 420 ]
+216 silly gunzTarPerm extractEntry meteor
+217 silly gunzTarPerm modified mode [ 'meteor', 511, 493 ]
+218 silly gunzTarPerm extractEntry test/process-title.js
+219 silly gunzTarPerm modified mode [ 'test/process-title.js', 438, 420 ]
+220 silly gunzTarPerm extractEntry test/illegal-yield.js
+221 silly gunzTarPerm modified mode [ 'test/illegal-yield.js', 438, 420 ]
+222 silly gunzTarPerm extractEntry test/started.js
+223 silly gunzTarPerm modified mode [ 'test/started.js', 438, 420 ]
+224 silly gunzTarPerm extractEntry test/exec.js
+225 silly gunzTarPerm modified mode [ 'test/exec.js', 438, 420 ]
+226 silly gunzTarPerm extractEntry admin/increment-version.js
+227 silly gunzTarPerm modified mode [ 'admin/increment-version.js', 438, 420 ]
+228 silly gunzTarPerm extractEntry admin/install-s3.sh
+229 silly gunzTarPerm modified mode [ 'admin/install-s3.sh', 511, 493 ]
+230 silly gunzTarPerm extractEntry test/child-process.js
+231 silly gunzTarPerm modified mode [ 'test/child-process.js', 438, 420 ]
+232 silly gunzTarPerm extractEntry test/already-running.js
+233 silly gunzTarPerm modified mode [ 'test/already-running.js', 438, 420 ]
+234 silly gunzTarPerm extractEntry admin/meteor.spec
+235 silly gunzTarPerm modified mode [ 'admin/meteor.spec', 438, 420 ]
+236 silly gunzTarPerm extractEntry admin/spark-standalone.sh
+237 silly gunzTarPerm modified mode [ 'admin/spark-standalone.sh', 511, 493 ]
+238 silly gunzTarPerm extractEntry admin/build-release.sh
+239 silly gunzTarPerm modified mode [ 'admin/build-release.sh', 511, 493 ]
+240 silly gunzTarPerm extractEntry admin/node.sh
+241 silly gunzTarPerm modified mode [ 'admin/node.sh', 511, 493 ]
+242 silly gunzTarPerm extractEntry test/exit.js
+243 silly gunzTarPerm modified mode [ 'test/exit.js', 438, 420 ]
+244 silly gunzTarPerm extractEntry src/coroutine.h
+245 silly gunzTarPerm modified mode [ 'src/coroutine.h', 438, 420 ]
+246 silly gunzTarPerm extractEntry admin/manifest.json
+247 silly gunzTarPerm modified mode [ 'admin/manifest.json', 438, 420 ]
+248 silly gunzTarPerm extractEntry admin/generate-dev-bundle.sh
+249 silly gunzTarPerm modified mode [ 'admin/generate-dev-bundle.sh', 511, 493 ]
+250 silly gunzTarPerm extractEntry src/coroutine.cc
+251 silly gunzTarPerm modified mode [ 'src/coroutine.cc', 438, 420 ]
+252 silly gunzTarPerm extractEntry src/libcoro/README
+253 silly gunzTarPerm modified mode [ 'src/libcoro/README', 438, 420 ]
+254 silly gunzTarPerm extractEntry admin/debian/copyright
+255 silly gunzTarPerm modified mode [ 'admin/debian/copyright', 438, 420 ]
+256 silly gunzTarPerm extractEntry admin/debian/control
+257 silly gunzTarPerm modified mode [ 'admin/debian/control', 438, 420 ]
+258 silly gunzTarPerm extractEntry src/libcoro/LICENSE
+259 silly gunzTarPerm modified mode [ 'src/libcoro/LICENSE', 438, 420 ]
+260 silly gunzTarPerm extractEntry src/libcoro/coro.h
+261 silly gunzTarPerm modified mode [ 'src/libcoro/coro.h', 438, 420 ]
+262 silly gunzTarPerm extractEntry admin/debian/compat
+263 silly gunzTarPerm modified mode [ 'admin/debian/compat', 438, 420 ]
+264 silly gunzTarPerm extractEntry admin/debian/docs
+265 silly gunzTarPerm modified mode [ 'admin/debian/docs', 438, 420 ]
+266 silly gunzTarPerm extractEntry admin/debian/rules
+267 silly gunzTarPerm modified mode [ 'admin/debian/rules', 511, 493 ]
+268 silly gunzTarPerm extractEntry admin/debian/changelog
+269 silly gunzTarPerm modified mode [ 'admin/debian/changelog', 438, 420 ]
+270 silly gunzTarPerm extractEntry admin/debian/meteor.install
+271 silly gunzTarPerm modified mode [ 'admin/debian/meteor.install', 438, 420 ]
+272 silly gunzTarPerm extractEntry admin/debian/source/format
+273 silly gunzTarPerm modified mode [ 'admin/debian/source/format', 438, 420 ]
+274 silly gunzTarPerm extractEntry src/libcoro/coro.c
+275 silly gunzTarPerm modified mode [ 'src/libcoro/coro.c', 438, 420 ]
+276 silly gunzTarPerm extractEntry src/libcoro/conftest.c
+277 silly gunzTarPerm modified mode [ 'src/libcoro/conftest.c', 438, 420 ]
+278 silly gunzTarPerm extractEntry admin/debian/meteor.links
+279 silly gunzTarPerm modified mode [ 'admin/debian/meteor.links', 438, 420 ]
+280 silly gunzTarPerm extractEntry src/fibers.cc
+281 silly gunzTarPerm modified mode [ 'src/fibers.cc', 438, 420 ]
+282 silly gunzTarPerm extractEntry binding.gyp
+283 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+284 silly gunzTarPerm extractEntry admin/cli-test.sh
+285 silly gunzTarPerm modified mode [ 'admin/cli-test.sh', 511, 493 ]
+286 silly gunzTarPerm extractEntry admin/cut-release.sh
+287 silly gunzTarPerm modified mode [ 'admin/cut-release.sh', 511, 493 ]
+288 silly gunzTarPerm extractEntry bin/.npmignore
+289 silly gunzTarPerm modified mode [ 'bin/.npmignore', 438, 420 ]
+290 silly gunzTarPerm extractEntry bin/win32-ia32-v8-3.6/fibers.node
+291 silly gunzTarPerm modified mode [ 'bin/win32-ia32-v8-3.6/fibers.node', 438, 420 ]
+292 silly gunzTarPerm extractEntry .arcconfig
+293 silly gunzTarPerm modified mode [ '.arcconfig', 438, 420 ]
+294 silly gunzTarPerm extractEntry app/meteor/update.js
+295 silly gunzTarPerm modified mode [ 'app/meteor/update.js', 438, 420 ]
+296 silly gunzTarPerm extractEntry bin/darwin-x64-v8-3.11/fibers.node
+297 silly gunzTarPerm modified mode [ 'bin/darwin-x64-v8-3.11/fibers.node', 511, 493 ]
+298 silly gunzTarPerm extractEntry app/meteor/run.js
+299 silly gunzTarPerm modified mode [ 'app/meteor/run.js', 438, 420 ]
+300 silly gunzTarPerm extractEntry app/meteor/deploy.js
+301 silly gunzTarPerm modified mode [ 'app/meteor/deploy.js', 438, 420 ]
+302 silly gunzTarPerm extractEntry bin/darwin-x64-v8-3.6/fibers.node
+303 silly gunzTarPerm modified mode [ 'bin/darwin-x64-v8-3.6/fibers.node', 511, 493 ]
+304 silly gunzTarPerm extractEntry bin/win32-ia32-v8-3.11/fibers.node
+305 silly gunzTarPerm modified mode [ 'bin/win32-ia32-v8-3.11/fibers.node', 438, 420 ]
+306 silly gunzTarPerm extractEntry app/meteor/post-upgrade.js
+307 silly gunzTarPerm modified mode [ 'app/meteor/post-upgrade.js', 438, 420 ]
+308 silly gunzTarPerm extractEntry app/meteor/meteor.js
+309 silly gunzTarPerm modified mode [ 'app/meteor/meteor.js', 438, 420 ]
+310 silly gunzTarPerm extractEntry app/meteor/skel/~name~.js
+311 silly gunzTarPerm modified mode [ 'app/meteor/skel/~name~.js', 438, 420 ]
+312 silly gunzTarPerm extractEntry app/meteor/skel/~name~.html
+313 silly gunzTarPerm modified mode [ 'app/meteor/skel/~name~.html', 438, 420 ]
+314 silly gunzTarPerm extractEntry bin/linux-ia32-v8-3.6/fibers.node
+315 silly gunzTarPerm modified mode [ 'bin/linux-ia32-v8-3.6/fibers.node', 511, 493 ]
+316 silly gunzTarPerm extractEntry bin/linux-x64-v8-3.11/fibers.node
+317 silly gunzTarPerm modified mode [ 'bin/linux-x64-v8-3.11/fibers.node', 511, 493 ]
+318 silly gunzTarPerm extractEntry app/meteor/skel/~name~.css
+319 silly gunzTarPerm modified mode [ 'app/meteor/skel/~name~.css', 438, 420 ]
+320 silly gunzTarPerm extractEntry app/meteor/skel/.meteor/.npmignore
+321 silly gunzTarPerm modified mode [ 'app/meteor/skel/.meteor/.npmignore', 438, 420 ]
+322 silly gunzTarPerm extractEntry bin/win32-x64-v8-3.11/fibers.node
+323 silly gunzTarPerm modified mode [ 'bin/win32-x64-v8-3.11/fibers.node', 438, 420 ]
+324 silly gunzTarPerm extractEntry app/server/server.js
+325 silly gunzTarPerm modified mode [ 'app/server/server.js', 438, 420 ]
+326 silly gunzTarPerm extractEntry app/server/underscore.js
+327 silly gunzTarPerm modified mode [ 'app/server/underscore.js', 438, 420 ]
+328 silly gunzTarPerm extractEntry app/lib/project.js
+329 silly gunzTarPerm modified mode [ 'app/lib/project.js', 438, 420 ]
+330 silly gunzTarPerm extractEntry app/lib/mongo_runner.js
+331 silly gunzTarPerm modified mode [ 'app/lib/mongo_runner.js', 438, 420 ]
+332 silly gunzTarPerm extractEntry bin/linux-x64-v8-3.6/fibers.node
+333 silly gunzTarPerm modified mode [ 'bin/linux-x64-v8-3.6/fibers.node', 511, 493 ]
+334 silly gunzTarPerm extractEntry bin/win32-x64-v8-3.6/fibers.node
+335 silly gunzTarPerm modified mode [ 'bin/win32-x64-v8-3.6/fibers.node', 438, 420 ]
+336 silly gunzTarPerm extractEntry app/lib/packages.js
+337 silly gunzTarPerm modified mode [ 'app/lib/packages.js', 438, 420 ]
+338 silly gunzTarPerm extractEntry app/lib/files.js
+339 silly gunzTarPerm modified mode [ 'app/lib/files.js', 438, 420 ]
+340 silly gunzTarPerm extractEntry app/lib/updater.js
+341 silly gunzTarPerm modified mode [ 'app/lib/updater.js', 438, 420 ]
+342 silly gunzTarPerm extractEntry app/lib/bundler.js
+343 silly gunzTarPerm modified mode [ 'app/lib/bundler.js', 438, 420 ]
+344 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-3.6/fibers.node
+345 silly gunzTarPerm modified mode [ 'bin/darwin-ia32-v8-3.6/fibers.node', 511, 493 ]
+346 silly gunzTarPerm extractEntry bin/linux-ia32-v8-3.11/fibers.node
+347 silly gunzTarPerm modified mode [ 'bin/linux-ia32-v8-3.11/fibers.node', 511, 493 ]
+348 silly gunzTarPerm extractEntry app/lib/app.html.in
+349 silly gunzTarPerm modified mode [ 'app/lib/app.html.in', 438, 420 ]
+350 silly gunzTarPerm extractEntry app/lib/unsupported.html
+351 silly gunzTarPerm modified mode [ 'app/lib/unsupported.html', 438, 420 ]
+352 silly gunzTarPerm extractEntry app/lib/third/underscore.js
+353 silly gunzTarPerm modified mode [ 'app/lib/third/underscore.js', 438, 420 ]
+354 silly gunzTarPerm extractEntry History.md
+355 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+356 silly gunzTarPerm extractEntry LICENSE.txt
+357 silly gunzTarPerm modified mode [ 'LICENSE.txt', 438, 420 ]
+358 silly gunzTarPerm extractEntry bin/darwin-ia32-v8-3.11/fibers.node
+359 silly gunzTarPerm modified mode [ 'bin/darwin-ia32-v8-3.11/fibers.node', 511, 493 ]
+360 silly gentlyRm /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c/node_modules is being purged
+361 verbose gentlyRm don't care about contents; nuking /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c/node_modules
+362 silly gentlyRm /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/meteor-133e17f9/node_modules is being purged
+363 verbose gentlyRm don't care about contents; nuking /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/meteor-133e17f9/node_modules
+364 silly doParallel preinstall 2
+365 silly preinstall fibers@0.6.9 /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c
+366 info lifecycle fibers@0.6.9~preinstall: fibers@0.6.9
+367 silly preinstall meteor@0.5.2-1 /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/meteor-133e17f9
+368 info lifecycle meteor@0.5.2-1~preinstall: meteor@0.5.2-1
+369 silly lifecycle fibers@0.6.9~preinstall: no script for preinstall, continuing
+370 silly lifecycle meteor@0.5.2-1~preinstall: no script for preinstall, continuing
+371 silly doReverseSerial remove 0
+372 silly doSerial move 0
+373 silly doSerial finalize 2
+374 silly finalize /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/fibers
+375 silly finalize /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/meteor
+376 silly doSerial build 2
+377 silly build fibers@0.6.9
+378 info linkStuff fibers@0.6.9
+379 silly linkStuff fibers@0.6.9 has /Users/kevinsofyan/Code/projeckt/eventerra/node_modules as its parent node_modules
+380 verbose linkBins fibers@0.6.9
+381 verbose linkMans fibers@0.6.9
+382 silly build meteor@0.5.2-1
+383 info linkStuff meteor@0.5.2-1
+384 silly linkStuff meteor@0.5.2-1 has /Users/kevinsofyan/Code/projeckt/eventerra/node_modules as its parent node_modules
+385 verbose linkBins meteor@0.5.2-1
+386 verbose link bins [ { meteor: 'app/meteor/meteor.js' },
+386 verbose link bins   '/Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.bin',
+386 verbose link bins   false ]
+387 verbose linkMans meteor@0.5.2-1
+388 silly doSerial global-link 0
+389 silly doParallel update-linked 0
+390 silly doSerial install 2
+391 silly install fibers@0.6.9 /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging/fibers-54bbee2c
+392 info lifecycle fibers@0.6.9~install: fibers@0.6.9
+393 verbose lifecycle fibers@0.6.9~install: unsafe-perm in lifecycle true
+394 verbose lifecycle fibers@0.6.9~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/kevinsofyan/Code/projeckt/eventerra/node_modules/fibers/node_modules/.bin:/Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.bin:/usr/local/bin:/Users/kevinsofyan/.composer/vendor/bin:/Users/kevinsofyan/.rvm/gems/ruby-2.3.0/bin:/Users/kevinsofyan/.rvm/gems/ruby-2.3.0@global/bin:/Users/kevinsofyan/.rvm/rubies/ruby-2.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/kevinsofyan/.rvm/bin
+395 verbose lifecycle fibers@0.6.9~install: CWD: /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/fibers
+396 silly lifecycle fibers@0.6.9~install: Args: [ '-c', 'node ./build.js' ]
+397 silly lifecycle fibers@0.6.9~install: Returned: code: 1  signal: null
+398 info lifecycle fibers@0.6.9~install: Failed to exec install script
+399 verbose unlock done using /Users/kevinsofyan/.npm/_locks/staging-5d13b1d1511a6450.lock for /Users/kevinsofyan/Code/projeckt/eventerra/node_modules/.staging
+400 silly rollbackFailedOptional Starting
+401 silly rollbackFailedOptional Finishing
+402 silly runTopLevelLifecycles Starting
+403 silly runTopLevelLifecycles Finishing
+404 silly install printInstalled
+405 verbose stack Error: fibers@0.6.9 install: `node ./build.js`
+405 verbose stack Exit status 1
+405 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:245:16)
+405 verbose stack     at emitTwo (events.js:106:13)
+405 verbose stack     at EventEmitter.emit (events.js:191:7)
+405 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+405 verbose stack     at emitTwo (events.js:106:13)
+405 verbose stack     at ChildProcess.emit (events.js:191:7)
+405 verbose stack     at maybeClose (internal/child_process.js:852:16)
+405 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+406 verbose pkgid fibers@0.6.9
+407 verbose cwd /Users/kevinsofyan/Code/projeckt/eventerra
+408 error Darwin 15.6.0
+409 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "meteor" "--save"
+410 error node v6.2.2
+411 error npm  v3.9.5
+412 error code ELIFECYCLE
+413 error fibers@0.6.9 install: `node ./build.js`
+413 error Exit status 1
+414 error Failed at the fibers@0.6.9 install script 'node ./build.js'.
+414 error Make sure you have the latest version of node.js and npm installed.
+414 error If you do, this is most likely a problem with the fibers package,
+414 error not with npm itself.
+414 error Tell the author that this fails on your system:
+414 error     node ./build.js
+414 error You can get information on how to open an issue for this project with:
+414 error     npm bugs fibers
+414 error Or if that isn't available, you can get their info via:
+414 error     npm owner ls fibers
+414 error There is likely additional logging output above.
+415 verbose exit [ 1, true ]
